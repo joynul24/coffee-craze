@@ -7,11 +7,13 @@ import {
 } from "react-router-dom"
 import MainLayout from './MainLayout.jsx'
 import AddCoffee from './components/AddCoffee.jsx'
+import ErrorPage from './components/ErrorPage.jsx'
 
 
 const router = createBrowserRouter([
   {
     path: "/",
+    errorElement: <ErrorPage></ErrorPage>,
     element: <MainLayout></MainLayout>
   },
   {

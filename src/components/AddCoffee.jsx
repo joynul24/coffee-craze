@@ -31,7 +31,7 @@ export default function AddCoffee() {
     }
 
      try{
-       const res = await axios.post("http://localhost:3000/coffees", newCoffee);
+       const res = await axios.post("https://coffee-craze-server.vercel.app/coffees", newCoffee);
        e.target.reset();
        if(res.data.insertedId){
          Swal.fire({
@@ -56,7 +56,7 @@ export default function AddCoffee() {
         <Navber></Navber>
    <div className="mt-20 container mx-auto px-4">
   <Link to="/">
-    <button className="btn border-[#331A15] hover:bg-[#D2B48C]">
+    <button className="btn border-[#331A15] hover:bg-[#D2B48C] font-rancho">
       <i className="fa-solid fa-arrow-left-long"></i> Back to home
     </button>
   </Link>
