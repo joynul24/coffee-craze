@@ -8,6 +8,7 @@ import Swal from "sweetalert2";
 export default function CoffeeCards() {
   const [coffes, setCoffes] = useState([]);
   useEffect(()=> {
+    axios.get("http://localhost:3000/coffees")
     axios.get("https://coffee-craze-server.vercel.app/coffees")
     .then(res => setCoffes(res.data))
     .catch(err => console.log(err))
@@ -79,7 +80,7 @@ export default function CoffeeCards() {
     <button className="btn bg-gray-600 text-white border-0"><FaPen /></button>
     <button onClick={()=> handleDelete(coffee._id)} className="btn bg-red-500 border-0 text-white"><MdDelete /></button>
   </div>
-</div>
+         </div>
     )
    )
  }

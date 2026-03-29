@@ -2,7 +2,7 @@ import errorImg from "../assets/404/error.gif"
 
 export default function ErrorPage() {
   return (
-   <div className="flex flex-col items-center justify-center h-screen bg-gray-100 text-center">
+   <div className="flex flex-col items-center justify-center h-screen text-center">
       {/* Error Image */}
       <img className="w-2/3 md:w-1/3 mb-6" src={errorImg} alt="Error" />
 
