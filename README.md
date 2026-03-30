@@ -1,16 +1,49 @@
-# React + Vite
+# ☕ Coffee Craze App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack MERN application to manage coffee products.  
+Users can view coffee details, update existing coffee information, and manage the coffee list with a clean UI and robust backend API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+- **Frontend (React App):** [https://coffee-craze.netlify.app/](https://coffee-craze.netlify.app/)  
+- **Backend API:** [https://github.com/joynul24/coffee-craze-server](https://github.com/joynul24/coffee-craze-server)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend (React + Tailwind + Axios + Toastify)
+- Dynamic routing with **React Router**
+- Coffee details page (`/coffees/:id`) with auto-filled data
+- Update form with **validation** (name, quantity, price, photo URL)
+- **Axios** integration for API calls
+- **Toastify** notifications for success, warning, and error handling
+- Responsive design with TailwindCSS
+- Shared components: `Navber`, `Footer`
+
+### Backend (Node.js + Express + MongoDB)
+- RESTful API endpoints:
+  - `GET /coffees` → fetch all coffees
+  - `GET /coffees/:id` → fetch single coffee by ID
+  - `PUT /coffees/:id` → update coffee details
+- MongoDB integration with ObjectId
+- Error handling for invalid requests
+- Returns `modifiedCount` to indicate update success
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** React, React Router, TailwindCSS, Axios, Toastify
+- **Backend:** Node.js, Express.js, MongoDB
+- **Database:** MongoDB Atlas
+
+---
+
+## ⚙️ Installation
+
+### Clone the repository
+```bash
+git clone https://github.com/your-username/coffee-craze.git
+cd coffee-craze
