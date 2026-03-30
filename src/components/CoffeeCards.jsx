@@ -8,7 +8,6 @@ import Swal from "sweetalert2";
 export default function CoffeeCards() {
   const [coffes, setCoffes] = useState([]);
   useEffect(()=> {
-    // axios.get("http://localhost:3000/coffees")
     axios.get("https://coffee-craze-server.vercel.app/coffees")
     .then(res => setCoffes(res.data))
     .catch(err => console.log(err))

@@ -3,7 +3,7 @@ import CoffeeCards from "./CoffeeCards";
 
 export default function CoffeeSections() {
   return (
-    <div>
+    <div className="bg-[url(https://joynul2024.sirv.com/coffee-images/more/1.png)] bg-no-repeat bg-cover">
        <div className="container mx-auto">
         {/* Title Section */}
        <div className="flex flex-col  items-center space-y-3 my-20 md:my-28">

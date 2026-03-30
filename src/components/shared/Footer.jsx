@@ -2,7 +2,8 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className="mt-10 bg-[#ECEAE3] py-10 md:py-20">
+    <div className="">
+      <div className="mt-10 bg-[#ECEAE3] py-10 md:py-20">
   <div className="container mx-auto flex flex-col md:flex-row gap-10 px-4">
     {/* Left Section */}
     <div className="flex-1 space-y-3 text-center md:text-left">
@@ -53,6 +54,11 @@ export default function Footer() {
       </button>
     </div>
   </div>
-</div>
+    </div>
+      {/* sub footer */}
+  <div className="py-4 bg-[url(https://joynul2024.sirv.com/coffee-images/more/24.jpg)] bg-no-repeat bg-cover">
+     <p className="text-white md:text-xl text-rancho text-center">Copyright Espresso Emporium ! All Rights Reserved</p>
+  </div>
+    </div>
   )
 }
