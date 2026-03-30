@@ -10,6 +10,7 @@ import AddCoffee from './components/AddCoffee.jsx'
 import ErrorPage from './components/ErrorPage.jsx'
 import CoffeeDetails from './components/CoffeeDetails.jsx'
 import { ToastContainer } from 'react-toastify'
+import UpdateCoffee from './components/UpdateCoffee.jsx'
 
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
     path: "/addCoffee",
     element: <AddCoffee></AddCoffee>
   },
+  {
+    path: "/updateCoffee/:id",
+    element: <UpdateCoffee></UpdateCoffee>
+  }
 ]);
 
 
